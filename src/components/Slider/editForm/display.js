@@ -24,6 +24,14 @@ export default [
     ignore: true,
   },
   {
+    key: "tableView",
+    ignore: true,
+  },
+  {
+    key: "modalEdit",
+    ignore: true,
+  },
+  {
     type: "number",
     label: "Min Value",
     key: "min",

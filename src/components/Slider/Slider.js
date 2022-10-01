@@ -241,11 +241,13 @@ export default class Slider extends FieldComponent {
 
   getTemplate() {
     return `
-      <div class="slider-wrapper>
-        <div class="slider-label">${this.component.label}</>
-        <div class="slider ${this.component.customClass} ${
-      this.component.hidden && "slider--hidden"
-    }">
+      <div class="slider-wrapper ${
+        !this.builderMode && this.component.hidden && "hide"
+      }">
+        <div class="slider-label">${
+          this.component.hideLabel ? "" : this.component.label
+        }</div>
+        <div class="slider ${this.component.customClass}">
           <div class="slider__progress" ref="slider-progress"></div>
           <div class="slider__value" ref="slider-value">${
             this.component.min

@@ -19,6 +19,10 @@ body {
   color: white;
 }
 
+.hide {
+  display: none;
+}
+
 .renderer {
   margin-top: 5rem;
 }
