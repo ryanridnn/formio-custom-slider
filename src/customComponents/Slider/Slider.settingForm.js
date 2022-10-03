@@ -36,7 +36,7 @@ export default function (...extend) {
           },
           {
             key: "modalEdit",
-            ignore: true,
+            ignore: false,
           },
           {
             type: "number",
