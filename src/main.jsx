@@ -22,7 +22,9 @@ Formio.builder(
 			// 	},
 			// },
 			basic: {
-				default: false,
+				components: {
+					slider: true,
+				},
 			},
 		},
 	}
