@@ -14,7 +14,7 @@ export default class MuiNumberField extends React.Component {
 
   setValue = (e) => {
     this.setState(
-      (prevState) => ({ value: e.target.value }),
+      (prevState) => ({ value: Number(e.target.value) }),
       () => this.props.onChange(e)
     );
   };

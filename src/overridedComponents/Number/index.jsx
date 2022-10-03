@@ -74,8 +74,9 @@ Components.components.number = class NumberField extends ReactComponent {
         component={this.component}
         value={this.dataValue}
         onChange={(e) => {
-          this.value = e.target.value;
-          this.data[this.component.key] = e.target.value;
+          const value = Number(e.target.value);
+          this.value = value;
+          this.data[this.component.key] = value;
           this.triggerChange();
         }}
       />,

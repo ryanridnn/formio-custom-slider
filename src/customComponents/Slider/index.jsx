@@ -18,6 +18,7 @@ export default class Slider extends ReactComponent {
     super(component, options, data);
     this.data[component.key] = component.defaultValue || component.min;
     this.value = component.defaultValue || component.min;
+    console.log(component);
   }
 
   static get builderInfo() {
